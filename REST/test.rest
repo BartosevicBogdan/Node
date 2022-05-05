@@ -1,1 +1,18 @@
 GET http://localhost:3000/test
+###
+GET http://localhost:3000/products
+###
+GET http://localhost:3000/totalproducts
+###
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+"image_url": "req.body.image_url",
+"title": "Tesla",
+"description": "Unique stuff",
+"price": 100
+}
+###
+DELETE http://localhost:3000/products/1
+###

@@ -19,4 +19,7 @@ app.get("/test", (request, response) => {
   response.json(output);
 });
 
+const productsRoute = require("./routes/productsRoute");
+app.use("", productsRoute);
+
 app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
